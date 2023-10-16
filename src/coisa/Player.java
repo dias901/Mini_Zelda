@@ -20,7 +20,7 @@ public class Player extends Rectangle{
 	public int dir= 1;
 	
 	public Player(int x, int y) {
-		super(90,90,32,32);//posição e dimensão do player
+		super(90,90,32,32);
 		
 	}
 	
@@ -92,7 +92,7 @@ public class Player extends Rectangle{
 	}
 	
 	if(tiro) {
-		tiro = false; //pra ele n atirar pra sempre
+		tiro = false;
 		bullets.add(new Bullets(x,y,dir));
 	}
 	
@@ -122,5 +122,3 @@ public class Player extends Rectangle{
 		}
 	}
 }
-
-//Rectangle tem todas box de colisão e vetores que precisamos

@@ -16,12 +16,12 @@ import javax.swing.JFrame;
 public class Game extends Canvas implements Runnable, KeyListener{
 
 	public static int WIDTH = 480, HEIGHT = 480;
-	public static Player player; //static pra conseguir acessar ele
+	public static Player player;
 	public static World world;
-	public List<Inimigo>Inimigo=new ArrayList<Inimigo>(); //Nova forma de criar variável e instanciar
+	public List<Inimigo>Inimigo=new ArrayList<Inimigo>();
 	
 	public Game() {
-		this.addKeyListener(this);//adicionar eventos de teclado e os metodos para cria esse evento ja foram criado
+		this.addKeyListener(this);
 		this.setPreferredSize(new Dimension(WIDTH,HEIGHT));
 		new Spritesheet();
 		player = new Player(32,32);
@@ -53,7 +53,7 @@ public class Game extends Canvas implements Runnable, KeyListener{
 		
 		player.render(g);
 		world.render(g);
-		for(int i=0;i<Inimigo.size();i++) {  //oq é isso?
+		for(int i=0;i<Inimigo.size();i++) {
 			Inimigo.get(i).render(g);
 		}
 		
@@ -129,9 +129,3 @@ public class Game extends Canvas implements Runnable, KeyListener{
 	}
 	
 }
-//sempre buscar uma otimização e n deixar espaço na memoria sem motivo
-//como esta rodando a 60fps a cada tick é 1 segundo
-//a thread é do java e quando você cria ela e da o start ele
-//procura pelo metodo na classe game (run)
-//tick é responsavel pela logica do nosso jogo, colisoes,
-//movimentação.

@@ -27,7 +27,7 @@ import java.util.Random;
 				if(new Random().nextInt(100)<50)
 				y+=spd;
 			}else if(y>p.y && World.isfree(x, y-spd)) {
-				if(new Random().nextInt(100)<50) //ele pega um numero aleatorio de 0-100 e se for menor que 50 ele se mexe
+				if(new Random().nextInt(100)<50)
 				y-=spd;
 			}
 		}
@@ -40,6 +40,3 @@ import java.util.Random;
 			g.drawImage(Spritesheet.Inimigo1[0],x,y,32,32,null);
 		}
 }
-
-	//Rectangle tem todas box de colisão e vetores que precisamos
-	//só pode pegar a posição do jogador se estiver static

@@ -25,6 +25,6 @@ public class Bullets extends Rectangle{
 	
 	public void render(Graphics g) {
 		g.setColor(Color.red);
-		g.fillRect(x, y, width, height); //width e height vem da classe rectangle
+		g.fillRect(x, y, width, height);
 	}
 }

@@ -8,7 +8,7 @@ import javax.imageio.ImageIO;
 	public class Spritesheet {
 
 	public static BufferedImage spritesheet;
-	public static BufferedImage[] jogador_Down; //é assim arraylist com o bufferedImage
+	public static BufferedImage[] jogador_Down;
 	public static BufferedImage[] jogador_Up;
 	public static BufferedImage[] jogador_Right;
 	public static BufferedImage[] jogador_Left;
